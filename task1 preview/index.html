@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+       <a href="#">Home</a>
+       <a class="header_top" href="#">Contact</a>
+       <a class="header_top" href="#">News</a>
+       <a class="header_top" href="#">Dropdown</a>
+       <a class="header_top" href="#">About</a>
+       <div class="icon" onclick="key()">
+           <span class="colorchange"></span>
+           <span class="colorchange"></span>
+           <span class="colorchange"></span>
+        </div>
+        <div id="mobile_menu" class="mobile_menu">
+            <a href="Login.html">Login</a>
+            <a href="Registration.html">Registration</a>
+            <a href="">Home</a>
+            <a href="Contact.html">Contact</a>
+            <a href="">News</a>
+            <a href="">Dropdown</a>
+            <a href="About.html">About</a>
+        </div>
+    </div>
+    
+
+    <script>
+        function key() {
+          var x = document.getElementById("mobile_menu");
+          if (x.className === "mobile_menu") {
+            x.className += " responsive";
+          } else {
+            x.className = "mobile_menu";
+          }
+        }
+        </script>
+    
+</body>
+</html>
